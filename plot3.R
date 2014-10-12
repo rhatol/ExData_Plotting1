@@ -12,7 +12,7 @@ points(PROJ1$DateTime,PROJ1$Sub_metering_1,col="black",type="l")
 points(PROJ1$DateTime,PROJ1$Sub_metering_2,col="red",type="l")
 points(PROJ1$DateTime,PROJ1$Sub_metering_3,col="blue",type="l")
 
-legend("topright",col=c("black","red","blue"),legend =c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),pch="-")
+legend("topright",col=c("black","red","blue"),legend =c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),pch="-",cex=0.8)
 
 #copy to device png
 dev.copy(png,file="plot3.png")
