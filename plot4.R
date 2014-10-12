@@ -23,5 +23,5 @@ legend("topright",col=c("black","red","blue"),legend =c("Sub_metering_1","Sub_me
 plot(PROJ1$DateTime,PROJ1$Global_reactive_power, type="l",ylab="Globe_reactive_power",xlab="datetime")
 
 #copy to device png
-dev.copy(png,file="plot3.png")
+dev.copy(png,file="plot4.png")
 dev.off()
