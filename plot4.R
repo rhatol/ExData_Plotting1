@@ -7,7 +7,7 @@ PROJ1$DateTime <- DateTime
 
 ## initialize device row/col
 par(mfrow = c(2,2))
-par(mar =c(4,4,4,4))
+par(mar =c(4,4,2,2))
 
 ## do the plots
 plot(PROJ1$DateTime,PROJ1$Global_active_power, type="l",ylab="Global Active Power", xlab="")
