@@ -9,17 +9,17 @@ PROJ1$DateTime <- DateTime
 par(mfrow = c(2,2))
 
 ## do the plots
-plot(stagePROJ1$DateTime,stagePROJ1$Global_active_power, type="l",ylab="Global Active Power", xlab="")
+plot(PROJ1$DateTime,PROJ1$Global_active_power, type="l",ylab="Global Active Power", xlab="")
 
-plot(stagePROJ1$DateTime,stagePROJ1$Voltage, type="l",ylab="Voltage",xlab="datetime")
+plot(PROJ1$DateTime,PROJ1$Voltage, type="l",ylab="Voltage",xlab="datetime")
 
-plot(stagePROJ1$DateTime,stagePROJ1$Sub_metering_1, type="n",ylab="Energy sub metering", xlab="")
-points(stagePROJ1$DateTime,stagePROJ1$Sub_metering_1,col="black",type="l")
-points(stagePROJ1$DateTime,stagePROJ1$Sub_metering_2,col="red",type="l")
-points(stagePROJ1$DateTime,stagePROJ1$Sub_metering_3,col="blue",type="l")
+plot(PROJ1$DateTime,PROJ1$Sub_metering_1, type="n",ylab="Energy sub metering", xlab="")
+points(PROJ1$DateTime,PROJ1$Sub_metering_1,col="black",type="l")
+points(PROJ1$DateTime,PROJ1$Sub_metering_2,col="red",type="l")
+points(PROJ1$DateTime,PROJ1$Sub_metering_3,col="blue",type="l")
 legend("topright",col=c("black","red","blue"),legend =c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),pch="-")
 
-plot(stagePROJ1$DateTime,stagePROJ1$Global_reactive_power, type="l",ylab="Globe_reactive_power",xlab="datetime")
+plot(PROJ1$DateTime,PROJ1$Global_reactive_power, type="l",ylab="Globe_reactive_power",xlab="datetime")
 
 #copy to device png
 dev.copy(png,file="plot3.png")
