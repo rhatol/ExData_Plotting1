@@ -18,7 +18,7 @@ plot(PROJ1$DateTime,PROJ1$Sub_metering_1, type="n",ylab="Energy sub metering", x
 points(PROJ1$DateTime,PROJ1$Sub_metering_1,col="black",type="l")
 points(PROJ1$DateTime,PROJ1$Sub_metering_2,col="red",type="l")
 points(PROJ1$DateTime,PROJ1$Sub_metering_3,col="blue",type="l")
-legend("topright",col=c("black","red","blue"),legend =c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),pch="-")
+legend("topright",col=c("black","red","blue"),legend =c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),pch="-",cex=0.8)
 
 plot(PROJ1$DateTime,PROJ1$Global_reactive_power, type="l",ylab="Globe_reactive_power",xlab="datetime")
 
